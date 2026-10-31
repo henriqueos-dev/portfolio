@@ -17,10 +17,10 @@ function Hero() {
         Focado no desenvolvimento de APIs com C# e Java, modelagem de bancos relacionais com SQL e interfaces dinâmicas em React.
       </p>
 
-      <div className="flex gap-4">
+      <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto px-6 sm:px-0">
         <a
           href="#projetos"
-          className="group inline-flex items-center gap-2 font-mono text-sm px-4 py-2 border border-primary/60 text-primary hover:bg-primary/10 transition-all duration-200 rounded"
+          className="group inline-flex items-center justify-center gap-2 font-mono text-sm px-4 py-2 border border-primary/60 text-primary hover:bg-primary/10 transition-all duration-200 rounded"
         >
           <span>{">"}</span>
           <span>projetos.listar()</span>
@@ -28,7 +28,7 @@ function Hero() {
 
         <a
           href="#contato"
-          className="group inline-flex items-center gap-2 font-mono text-sm px-4 py-2 border border-surface-border hover:border-slate-400 text-slate-300 hover:text-white transition-all duration-200 rounded"
+          className="group inline-flex items-center justify-center gap-2 font-mono text-sm px-4 py-2 border border-surface-border hover:border-muted text-text-body hover:text-white transition-all duration-200 rounded"
         >
           <span className="text-muted group-hover:text-white transition-colors">{">"}</span>
           <span>contato.abrir()</span>

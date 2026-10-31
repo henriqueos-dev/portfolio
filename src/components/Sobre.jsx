@@ -1,3 +1,5 @@
+import { textosSobre } from "../data/dadosPortfolio";
+
 function Sobre() {
   return (
     <section id="sobre" className="flex flex-col items-center text-center py-16 px-6 gap-6">
@@ -8,26 +10,16 @@ function Sobre() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl w-full mt-4 text-left">
-        <div className="p-5 rounded-lg border border-surface-border bg-slate-900/40">
-          <span className="text-primary font-mono text-sm block mb-1">01. Foco</span>
-          <p className="text-slate-300 text-sm">
-            Desenvolvimento de APIs REST com C# e Java, além de estruturação e consultas em bancos relacionais (SQL).
-          </p>
-        </div>
-
-        <div className="p-5 rounded-lg border border-surface-border bg-slate-900/40">
-          <span className="text-primary font-mono text-sm block mb-1">02. Formação</span>
-          <p className="text-slate-300 text-sm">
-            Cursando Análise e Desenvolvimento de Sistemas.
-          </p>
-        </div>
-
-        <div className="p-5 rounded-lg border border-surface-border bg-slate-900/40">
-          <span className="text-primary font-mono text-sm block mb-1">03. Princípios</span>
-          <p className="text-slate-300 text-sm">
-            Código limpo, organização com Git e foco na resolução prática dos problemas.
-          </p>
-        </div>
+        {textosSobre.map((item) => (
+          <div key={item.id} className="p-5 rounded-lg border border-surface-border bg-surface-card">
+            <span className="text-primary font-mono text-sm block mb-1">
+              {item.id}. {item.titulo}
+            </span>
+            <p className="text-text-body text-sm">
+              {item.descricao}
+            </p>
+          </div>
+        ))}
       </div>
     </section>
   );
