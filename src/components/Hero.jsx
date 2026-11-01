@@ -31,7 +31,7 @@ function Hero() {
           className="group inline-flex items-center justify-center gap-2 font-mono text-sm px-4 py-2 border border-surface-border hover:border-muted text-text-body hover:text-white transition-all duration-200 rounded"
         >
           <span className="text-muted group-hover:text-white transition-colors">{">"}</span>
-          <span>contato.abrir()</span>
+          <span>contato.conectar()</span>
         </a>
       </div>
     </section>
