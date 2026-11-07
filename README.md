@@ -4,6 +4,8 @@ Portfólio web desenvolvido em React e Tailwind CSS para apresentar meus projeto
 
 Fiz este site com o objetivo de ter uma interface leve, direta e sem dependências externas desnecessárias, servindo como uma apresentação das minhas habilidades e da forma como organizo o código.
 
+> **Deploy da aplicação:** [henriqueos-dev.vercel.app](https://henriqueos-dev.vercel.app)
+
 ---
 
 ## O que a aplicação traz
